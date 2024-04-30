@@ -47,13 +47,19 @@ body {
 }
 
 /* video de fondo */
-#video-background {
+#video-background-desktop,
+#video-background-mobile {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 100%;
-  min-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
   z-index: -1;
+}
+
+#video-background-mobile {
+  display: none; /* Por defecto, ocultar el video móvil */
 }
 
 /* menu */
@@ -162,5 +168,13 @@ a:hover,
   .subOption {
     padding: 10px;
     text-align: center;
+  }
+
+  #video-background-desktop {
+    display: none; /* Ocultar el video de escritorio en dispositivos móviles */
+  }
+
+  #video-background-mobile {
+    display: block; /* Mostrar el video de móvil en dispositivos móviles */
   }
 }
