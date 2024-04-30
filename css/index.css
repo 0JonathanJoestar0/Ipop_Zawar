@@ -83,21 +83,24 @@ a {
 
 .option {
   padding-left: 25px;
-  font-size: bold;
   font-style: italic;
-  font-size: 25px;
+  font-size: 40px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+.option h1 {
+  margin: 5px;
 }
 
 a:hover,
 .option:hover {
   background: linear-gradient(
     90deg,
-    rgba(255, 224, 85, 0.589) 20%,
-    rgba(0, 0, 0, 0) 80%
+    rgba(244, 255, 16, 1) 0%,
+    rgba(253, 187, 45, 0) 35%
   );
-  color: rgb(251, 255, 0);
+  color: rgb(243, 87, 87);
   text-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
 }
 
