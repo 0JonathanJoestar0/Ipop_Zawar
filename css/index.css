@@ -124,3 +124,44 @@ a:hover,
 .footer-content p {
   margin: 0;
 }
+
+.menu-icon {
+  display: none;
+}
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+  .barraNavegacion {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gamerTag {
+    margin-top: 10px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu.open {
+    display: block; /* Mostrar el menú cuando tiene la clase "open" */
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .option,
+  .subOption {
+    padding: 10px;
+    text-align: center;
+  }
+}
