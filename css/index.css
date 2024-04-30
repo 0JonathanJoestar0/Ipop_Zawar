@@ -6,23 +6,60 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Teko";
-  background-color: #1f1f1f;
+  /* background-color: #1f1f1f; */
+}
+
+/* barra de navegacion */
+.barraNavegacion {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  justify-content: space-between;
+}
+
+/* gamertag */
+.gamerTag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gamerTag h2 {
+  background-color: #fff;
+  height: 75px;
+  padding: 0px 7px 0px 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.gamerTag img {
+  height: 75px;
+  width: auto;
+  margin-right: 5px;
+}
+
+/* logo */
+.logo img {
+  max-width: 100px;
+  height: auto;
+  padding: 0px 7px 0px 7px;
+}
+
+#video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
 }
 
 /* menu */
 .menu {
   width: 100%;
   height: 100%;
-}
-
-/* logo */
-.logo {
-  width: 100px;
-  height: 50px;
-  background-image: url("");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-bottom: 20px;
 }
 
 /* opciones */
@@ -32,7 +69,8 @@ body {
 }
 
 .option {
-  padding: 10px;
+  /* padding: 10px; */
+  padding-left: 25px;
   color: #fff;
   font-size: 40px;
   font-weight: bold;
@@ -42,11 +80,19 @@ body {
 }
 
 .option:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 224, 85, 0.589) 20%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  color: rgb(251, 255, 0);
+  text-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .subOption {
-  padding: 8px;
+  /* padding: 20px; */
+  padding-left: 20px;
   color: #fff;
   font-size: 20px;
   cursor: pointer;
@@ -55,4 +101,20 @@ body {
 
 .subOption:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.game-footer {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content p {
+  margin: 0;
 }
