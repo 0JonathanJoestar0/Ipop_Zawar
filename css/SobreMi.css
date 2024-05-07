@@ -1,0 +1,99 @@
+/* imports */
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+
+/* general */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Teko";
+}
+
+/* Cabecera */
+header {
+  background-color: #333;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Barra de navegacion */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 5px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+  background-color: #f2f2f2;
+}
+
+nav ul li a.active {
+  background-color: #333;
+  color: #fff;
+}
+
+/* gamertag */
+.gamerTag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.gamerTag h2 {
+  background-color: #fff;
+  height: 75px;
+  padding: 0px 7px 0px 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.gamerTag img {
+  height: 75px;
+  width: auto;
+  margin-right: 5px;
+}
+
+/* main */
+main {
+  padding: 20px;
+}
+
+.player-stats {
+  margin-bottom: 20px;
+}
+
+.player-stats h2 {
+  margin-bottom: 10px;
+}
+
+.stats {
+  display: flex;
+}
+
+.stat {
+  flex: 1;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 0 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
