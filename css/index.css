@@ -59,7 +59,7 @@ body {
 }
 
 #video-background-mobile {
-  display: none; /* Por defecto, ocultar el video móvil */
+  display: none;
 }
 
 /* menu */
@@ -100,7 +100,7 @@ a:hover,
     rgba(244, 255, 16, 1) 0%,
     rgba(253, 187, 45, 0) 35%
   );
-  color: rgb(243, 87, 87);
+  color: #fff;
   text-shadow: 10px 0 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -160,7 +160,7 @@ a:hover,
   }
 
   .menu.open {
-    display: block; /* Mostrar el menú cuando tiene la clase "open" */
+    display: block;
   }
 
   .menu-icon {
@@ -180,10 +180,10 @@ a:hover,
   }
 
   #video-background-desktop {
-    display: none; /* Ocultar el video de escritorio en dispositivos móviles */
+    display: none;
   }
 
   #video-background-mobile {
-    display: block; /* Mostrar el video de móvil en dispositivos móviles */
+    display: block;
   }
 }
